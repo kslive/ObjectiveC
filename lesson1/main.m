@@ -33,8 +33,11 @@ int main(int argc, const char * argv[]) {
                 break;
         }
         // 2) Улучшить программу: организовать вывод результата и переменных в консоль одной строкой
+        NSLog(@"First input number - %.ld,\nSecond input number - %.ld,\nOperation type - %.ld", firstInputNumber, secondInputNumber, operationType);
         // 3) *Создать приложение, которое будет вычислять среднее число из трех переменных, не применяя специальные функции
-        
+        NSInteger thirdInputNumber = 5;
+        NSLog(@"First input number - %.ld,\nSecond input number - %.ld,\nThird input number - %.ld,\nAverage number - %.ld", firstInputNumber, secondInputNumber, thirdInputNumber, (firstInputNumber + secondInputNumber + thirdInputNumber)/3);
+
     }
     return 0;
 }
